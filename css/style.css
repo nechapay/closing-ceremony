@@ -1,0 +1,92 @@
+.content-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.my-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    background: url("../img/bg.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.place-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    width: 33%;
+    height: 100%;
+    max-width: 33%;
+}
+
+.place {
+    width: 100%;
+    margin-top: 170%;
+}
+
+.place.second {
+    padding-top: 30%;
+}
+
+.place.third {
+    padding-top: 45%;
+}
+
+.place.first.in, .place.second.in, .place.third.in {
+    margin-top: 0;
+    animation-duration: 20s;
+    animation-name: animatetop;
+}
+
+@keyframes animatetop {
+    from {margin-top: 170%;}
+    to {margin-top: 0;}
+}
+
+.my-button{
+    background-color: #0000ff;
+    border: 2px solid #008CBA;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 0.25vw;
+    cursor: pointer;
+}
+.my-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#start {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.my-hide {
+    opacity: 0;
+    cursor: default;
+}
